@@ -4,5 +4,7 @@ function testFunc() {
   return "hi"
 }
 function superbowlWin(arrOfObj){
-  return (arrOfObj.find(obj=>obj.result==="W")).year;
+   let winner=(arrOfObj.find(obj=>obj.result==="W"));
+   if(winner){return winner.year;}
+   else{return winner;}
 }
